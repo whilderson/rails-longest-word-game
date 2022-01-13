@@ -1,0 +1,63 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.letter-card {
+  width: 1em;
+  height: 1em;
+  color: white;
+  background-color: #3498DC;
+  text-align: center;
+  padding: 16px 16px;
+  font-family: 'Courier Prime', monospace;
+  font-size: larger;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+form {
+  display: flex;
+  margin-top: 32px;
+  #submit-field {
+    flex-grow: 1;
+  }
+}
+
+input {
+  font-size: large;
+  padding: 8px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type=text] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-right: none;
+  color: rgba(0,0,0,0.6);
+  width: 360px;
+}
+
+input[type=submit] {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: none;
+  padding: 4px 12px;
+  background-color: #337AB7;
+  color: white;
+}
